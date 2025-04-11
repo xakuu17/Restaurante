@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paquetes Turísticos</title>
+    <style>
+        /* Reset general */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Cabecera */
+        header {
+            background-color: #e31c25; /* Rojo */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Imagen debajo del header */
+        .header-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #e31c25; /* Rojo */
+        }
+
+        /* Sección de paquetes */
+        .packages {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 por fila */
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .package {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .package img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .package h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+            color: #e31c25; /* Rojo */
+        }
+
+        .package p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .package button {
+            background-color: #28a745; /* Verde */
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .package button:hover {
+            background-color: #218838; /* Verde más oscuro */
+        }
+
+        .package:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        /* Diseño responsivo */
+        @media (max-width: 1024px) {
+            .packages {
+                grid-template-columns: repeat(3, 1fr); /* 3 por fila */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .packages {
+                grid-template-columns: repeat(2, 1fr); /* 2 por fila */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .packages {
+                grid-template-columns: 1fr; /* 1 por fila */
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>Bienvenidos a Paquetes Turísticos</h1>
+    </header>
+
+    <!-- Imagen de la parte inferior del encabezado -->
+    <img src="https://blog.viajesmachupicchu.travel/wp-content/uploads/2021/11/5-atractivos-turisticos-de-trujillo-peru-1170x550.jpg" alt="Destinos Turísticos">
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Destinos</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- Sección de paquetes -->
+    <section class="packages">
+        <div class="package">
+            <img src="https://aem-all.accor.com/content/dam/all/hubs/americas/latam/generic-images/all-magazine/principales-lugares-turisticos-trujillo-ciudad-historica-del-peru-2024-1.jpg" alt="Paquete Aventura">
+            <h3>Paquete Aventura</h3>
+            <p>Sumérgete en la aventura de un viaje lleno de emociones. Disfruta de actividades extremas y paisajes naturales.</p>
+            <button>Ver más</button><a href=""></a>
+        </div>
+        <div class="package">
+            <img src="https://denomades-blog.imgix.net/blog/wp-content/uploads/2020/09/19163849/shutterstock_217920055-1.jpg" alt="Paquete Cultural">
+            <h3>Paquete Cultural</h3>
+            <p>Explora las riquezas culturales de destinos únicos. Vive la historia, las tradiciones y el arte local.</p>
+            <button>Ver más</button>
+        </div>
+        <div class="package">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPQjRrqdxJ0g7YXnHUgCviDCB92zf9jGLOVQ&s" alt="Paquete Relax">
+            <h3>Paquete Relax</h3>
+            <p>Escapa de la rutina y disfruta de un paraíso de paz y tranquilidad, con todo lo necesario para descansar.</p>
+            <button>Ver más</button>
+        </div>
+        <div class="package">
+            <img src="https://aem-all.accor.com/content/dam/all/hubs/americas/latam/generic-images/all-magazine/principales-lugares-turisticos-trujillo-ciudad-historica-del-peru-2024-1.jpg" alt="Paquete Aventura">
+            <h3>Paquete Aventura</h3>
+            <p>Disfruta de una experiencia única en la naturaleza, con actividades emocionantes como trekking, senderismo, y mucho más.</p>
+            <button>Ver más</button>
+        </div>
+        <div class="package">
+            <img src="https://denomades-blog.imgix.net/blog/wp-content/uploads/2020/09/19163849/shutterstock_217920055-1.jpg" alt="Paquete Cultural">
+            <h3>Paquete Cultural</h3>
+            <p>Conoce las tradiciones y cultura de diversos destinos. Aprende sobre gastronomía, arte y festividades locales.</p>
+            <button>Ver más</button>
+        </div>
+        <div class="package">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPQjRrqdxJ0g7YXnHUgCviDCB92zf9jGLOVQ&s" alt="Paquete Relax">
+            <h3>Paquete Relax</h3>
+            <p>Relájate en un entorno natural que te permitirá desconectar del estrés y disfrutar del bienestar.</p>
+            <button>Ver más</button>
+        </div>
+        <div class="package">
+            <img src="https://aem-all.accor.com/content/dam/all/hubs/americas/latam/generic-images/all-magazine/principales-lugares-turisticos-trujillo-ciudad-historica-del-peru-2024-1.jpg" alt="Paquete Aventura">
+            <h3>Paquete Aventura</h3>
+            <p>Adéntrate en un mundo de aventuras en donde descubrirás paisajes increíbles y vivirás experiencias únicas.</p>
+            <button>Ver más</button>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Paquetes Turísticos | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
